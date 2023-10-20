@@ -10,9 +10,9 @@
 
 ## TEAM
   #### - 박예찬   
-   studentNum:  202055643
-   git: https://github.com
-   e-mail: dpcks0509@gmail.com
+   studentNum: 202055643  
+   git: https://github.com/jihoon50  
+   e-mail: dpcks0509@gmail.com 
      
   #### - 손지훈  
    studentNum: 202055644  
@@ -21,8 +21,8 @@
      
   #### - 채수철  
    studentNum: 202055652
-   git: https://github.com
-   e-mail: cotncjf2@naver.com
+   git: https://github.com/jihoon50  
+   e-mail: cotncjf2@naver.com 
 
 ## POSTER
 ![figure](/images/capstone_poster.jpg)
