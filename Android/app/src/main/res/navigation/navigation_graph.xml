@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="pnu.cse.onionmarket.home.HomeFragment"
+        android:label="HomeFragment"
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/action_homeFragment_to_searchFragment"
+            app:destination="@id/searchFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_walletFragment"
+            app:destination="@id/walletFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_chatFragment"
+            app:destination="@id/chatFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_myPageFragment"
+            app:destination="@id/profileFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_postWriteFragment"
+            app:destination="@id/postWriteFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_postDetailFragment"
+            app:destination="@id/postDetailFragment" />
+        <argument
+            android:name="searchQuery"
+            app:argType="string" />
+        <argument
+            android:name="firstSearch"
+            app:argType="boolean" />
+        <action
+            android:id="@+id/action_homeFragment_to_chatDetailFragment"
+            app:destination="@id/chatDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/searchFragment"
+        android:name="pnu.cse.onionmarket.search.SearchFragment"
+        android:label="SearchFragment"
+        tools:layout="@layout/fragment_search">
+        <action
+            android:id="@+id/action_searchFragment_to_homeFragment"
+            app:destination="@id/homeFragment"
+            app:popUpTo="@id/homeFragment"
+            app:popUpToInclusive="true"/>
+    </fragment>
+    <fragment
+        android:id="@+id/walletFragment"
+        android:name="pnu.cse.onionmarket.wallet.WalletFragment"
+        android:label="WalletFragment"
+        tools:layout="@layout/fragment_wallet">
+        <action
+            android:id="@+id/action_walletFragment_to_walletAddFragment"
+            app:destination="@id/walletAddFragment" />
+        <action
+            android:id="@+id/action_walletFragment_to_postDetailFragment"
+            app:destination="@id/postDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/chatFragment"
+        android:name="pnu.cse.onionmarket.chat.ChatFragment"
+        android:label="ChatFragment"
+        tools:layout="@layout/fragment_chat">
+        <action
+            android:id="@+id/action_chatFragment_to_chatDetailFragment"
+            app:destination="@id/chatDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="pnu.cse.onionmarket.profile.ProfileFragment"
+        android:label="ProfileFragment"
+        tools:layout="@layout/fragment_profile">
+        <action
+            android:id="@+id/action_profileFragment_to_reviewFragment"
+            app:destination="@id/reviewFragment" />
+        <action
+            android:id="@+id/action_profileFragment_to_sellingFragment"
+            app:destination="@id/sellingFragment" />
+        <action
+            android:id="@+id/action_profileFragment_to_postDetailFragment"
+            app:destination="@id/postDetailFragment" />
+        <argument
+            android:name="writerId"
+            app:argType="string" />
+        <argument
+            android:name="postId"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_profileFragment_to_chatDetailFragment"
+            app:destination="@id/chatDetailFragment" />
+        <action
+            android:id="@+id/action_profileFragment_to_reviewWriteFragment"
+            app:destination="@id/reviewWriteFragment" />
+        <action
+            android:id="@+id/action_profileFragment_to_profileEditFragment"
+            app:destination="@id/profileEditFragment" />
+        <action
+            android:id="@+id/action_profileFragment_to_withdrawalFragment"
+            app:destination="@id/withdrawalFragment" />
+        <action
+            android:id="@+id/action_profileFragment_to_chatFragment"
+            app:destination="@id/chatFragment" />
+        <argument
+            android:name="fromBlockchain"
+            app:argType="boolean"
+            android:defaultValue="false" />
+    </fragment>
+    <fragment
+        android:id="@+id/postDetailFragment"
+        android:name="pnu.cse.onionmarket.post.detail.PostDetailFragment"
+        android:label="fragment_post_detail"
+        tools:layout="@layout/fragment_post_detail" >
+        <action
+            android:id="@+id/action_postDetailFragment_to_searchFragment"
+            app:destination="@id/searchFragment" />
+        <action
+            android:id="@+id/action_postDetailFragment_to_postWriteFragment"
+            app:destination="@id/postWriteFragment" />
+        <action
+            android:id="@+id/action_postDetailFragment_to_chatDetailFragment"
+            app:destination="@id/chatDetailFragment" />
+        <action
+            android:id="@+id/action_postDetailFragment_to_profileFragment"
+            app:destination="@id/profileFragment"
+            app:popUpTo="@id/homeFragment"
+            app:popUpToInclusive="true"/>
+        <argument
+            android:name="writerId"
+            app:argType="string" />
+        <argument
+            android:name="postId"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_postDetailFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+        <action
+            android:id="@+id/action_postDetailFragment_to_chatFragment"
+            app:destination="@id/chatFragment"
+            app:popUpTo="@id/homeFragment"
+            app:popUpToInclusive="true"/>
+        <action
+            android:id="@+id/action_postDetailFragment_to_safePaymentFragment"
+            app:destination="@id/safePaymentFragment"
+           />
+        <action
+            android:id="@+id/action_postDetailFragment_to_reviewWriteFragment"
+            app:destination="@id/reviewWriteFragment" />
+        <action
+            android:id="@+id/action_postDetailFragment_to_waybillFragment"
+            app:destination="@id/waybillFragment" />
+        <argument
+            android:name="fromBlockchain"
+            app:argType="boolean"
+            android:defaultValue="false" />
+    </fragment>
+    <fragment
+        android:id="@+id/postWriteFragment"
+        android:name="pnu.cse.onionmarket.post.write.PostWriteFragment"
+        android:label="PostWriteFragment"
+        tools:layout="@layout/fragment_post_write">
+        <action
+            android:id="@+id/action_postWriteFragment_to_homeFragment"
+            app:destination="@id/homeFragment"
+            app:popUpTo="@id/homeFragment"
+            app:popUpToInclusive="true"/>
+        <argument
+            android:name="postId"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/chatDetailFragment"
+        android:name="pnu.cse.onionmarket.chat.detail.ChatDetailFragment"
+        android:label="ChatDetailFragment"
+        tools:layout="@layout/fragment_chat_detail">
+        <action
+            android:id="@+id/action_chatDetailFragment_to_postDetailFragment"
+            app:destination="@id/postDetailFragment" />
+        <action
+            android:id="@+id/action_chatDetailFragment_to_searchFragment"
+            app:destination="@id/searchFragment" />
+        <argument
+            android:name="chatRoomId"
+            app:argType="string" />
+        <argument
+            android:name="otherUserId"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_chatDetailFragment_to_profileFragment"
+            app:destination="@id/profileFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/walletAddFragment"
+        android:name="pnu.cse.onionmarket.wallet.WalletAddFragment"
+        android:label="WalletAddFragment"
+        tools:layout="@layout/fragment_wallet_add"/>
+    <fragment
+        android:id="@+id/reviewFragment"
+        android:name="pnu.cse.onionmarket.profile.review.ReviewFragment"
+        android:label="ReviewFragment"
+        tools:layout="@layout/fragment_review"/>
+
+    <fragment
+        android:id="@+id/sellingFragment"
+        android:name="pnu.cse.onionmarket.profile.selling.SellingFragment"
+        android:label="SellingFragment"
+        tools:layout="@layout/fragment_selling"/>
+    <fragment
+        android:id="@+id/safePaymentFragment"
+        android:name="pnu.cse.onionmarket.payment.SafePaymentFragment"
+        android:label="SafePaymentFragment"
+        tools:layout="@layout/fragment_safe_payment">
+        <argument
+            android:name="postId"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_safePaymentFragment_to_chatDetailFragment"
+            app:destination="@id/chatDetailFragment"
+            app:popUpTo="@id/postDetailFragment" />
+        <argument
+            android:name="writerId"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/reviewWriteFragment"
+        android:name="pnu.cse.onionmarket.profile.review.ReviewWriteFragment"
+        android:label="ReviewWriteFragment"
+        tools:layout="@layout/fragment_review_write">
+        <argument
+            android:name="profileUserId"
+            app:argType="string" />
+        <argument
+            android:name="postId"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_reviewWriteFragment_to_chatDetailFragment"
+            app:destination="@id/chatDetailFragment"
+            app:popUpTo="@id/postDetailFragment"/>
+    </fragment>
+    <fragment
+        android:id="@+id/profileEditFragment"
+        android:name="pnu.cse.onionmarket.profile.ProfileEditFragment"
+        android:label="ProfileEditFragment"
+        tools:layout="@layout/fragment_profile_edit"/>
+    <fragment
+        android:id="@+id/withdrawalFragment"
+        android:name="pnu.cse.onionmarket.profile.WithdrawalFragment"
+        android:label="WithdrawalFragment"
+        tools:layout="@layout/fragment_withdrawal"/>
+    <fragment
+        android:id="@+id/waybillFragment"
+        android:name="pnu.cse.onionmarket.payment.WaybillFragment"
+        android:label="WaybillFragment"
+        tools:layout="@layout/fragment_waybill">
+        <action
+            android:id="@+id/action_waybillFragment_to_chatDetailFragment"
+            app:destination="@id/chatDetailFragment"
+            app:popUpTo="@id/postDetailFragment"/>
+        <argument
+            android:name="postId"
+            app:argType="string" />
+        <argument
+            android:name="writerId"
+            app:argType="string" />
+    </fragment>
+</navigation>
