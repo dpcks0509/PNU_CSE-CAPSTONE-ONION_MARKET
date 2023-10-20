@@ -11,7 +11,7 @@
 ## TEAM
   #### - 박예찬   
    studentNum:  202055643
-   git:   
+   git: https://github.com
    e-mail: dpcks0509@gmail.com
      
   #### - 손지훈  
@@ -21,8 +21,8 @@
      
   #### - 채수철  
    studentNum: 202055652
-   git: 
+   git: https://github.com
    e-mail: cotncjf2@naver.com
 
 ## POSTER
-({{site.baseurl}}/images/capstone_poster.jpg)
+![figure]({{site.baseurl}}/images/capstone_poster.jpg)
