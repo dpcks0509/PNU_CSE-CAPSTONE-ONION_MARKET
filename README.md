@@ -25,4 +25,4 @@
    e-mail: cotncjf2@naver.com
 
 ## POSTER
-
+({{site.baseurl}}/images/capstone_poster.jpg)
