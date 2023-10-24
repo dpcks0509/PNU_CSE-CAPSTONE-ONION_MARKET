@@ -29,10 +29,9 @@ truffle migrate
 
 (안드로이드)
 
-	1.	터미널에서 다음 명령을 입력합니다. git clone https://github.com/dpcks0509/OnionMarket
-	2.	Android Studio에서 import Project를 통해 clone한 폴더를 가져옵니다.
-	3.	Emulator의 가상기기를 이용하거나 실제 device를 연결하여 실행합니다.
-
+1.	터미널에서 다음 명령을 입력합니다. git clone https://github.com/dpcks0509/OnionMarket
+2.	Android Studio에서 import Project를 통해 clone한 폴더를 가져옵니다.
+3.	Emulator의 가상기기를 이용하거나 실제 device를 연결하여 실행합니다.
 (주의사항 : 블록체인 및 서버가 작동중이어야 정상적으로 작동합니다.)
 
 
