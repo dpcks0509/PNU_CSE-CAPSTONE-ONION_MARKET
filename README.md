@@ -18,6 +18,7 @@ npm install -g ganache-cli
 
 가나슈 서버 실행(IP로 실행) --db는 데이터 저장 경로
 ganache-cli --host 222.222.222.222 -d --db ./blockchainData -i 9999 --deterministic --mnemonic="myth like bonus scare over problem client lizard pioneer submit female collect"
+
 로컬호스트로 실행 --db는 데이터 저장 경로
 ganache-cli -d --db ./blockchainData -i 9999 --deterministic --mnemonic="myth like bonus scare over problem client lizard pioneer submit female collect"
 --deterministic 과 --mnemonic 옵션은 재실행해도 지갑 주소가 그대로 나오게 하기 위함
