@@ -39,18 +39,18 @@ truffle migrate
 
 ## TEAM
   #### - 박예찬   
-   studentNum: 202055643  
-   git: https://github.com/dpcks0509
-   e-mail: dpcks0509@gmail.com 
+   studentNum: 202055643       
+   git: https://github.com/dpcks0509    
+   e-mail: dpcks0509@gmail.com    
      
   #### - 손지훈  
-   studentNum: 202055644  
-   git: https://github.com/jihoon50  
+   studentNum: 202055644      
+   git: https://github.com/jihoon50       
    e-mail: thswlgns50@naver.com  
      
   #### - 채수철  
-   studentNum: 202055652
-   git: https://github.com/cotncjf2
+   studentNum: 202055652    
+   git: https://github.com/cotncjf2      
    e-mail: cotncjf2@naver.com 
 
 
