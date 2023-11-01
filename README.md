@@ -53,7 +53,8 @@ truffle migrate
    git: https://github.com/cotncjf2   
    e-mail: cotncjf2@naver.com 
 
-
+## 소개 및 시연 영상
+https://www.youtube.com/watch?v=0CIKGKDZyCo
 
 ## POSTER
 ![figure](/images/capstone_poster.jpg)
