@@ -1,6 +1,4 @@
-[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-24ddc0f5d75046c5622901739e7c5dd533143b0c8e959d652212380cedb1ea36.svg)](https://classroom.github.com/a/fnZ3vxy8)
-
-# TEAM BLOCKNET REPOSITORY
+# 블록네트
  ## 프로젝트
   ### 1. 프로젝트 명
   블록체인 기반 중고거래 플랫폼
@@ -50,7 +48,7 @@ truffle migrate
      
   #### - 채수철  
    studentNum: 202055652   
-   git: https://github.com/cotncjf2   
+   git: https://github.com/Charles0304
    e-mail: cotncjf2@naver.com 
 
 ## 소개 및 시연 영상
