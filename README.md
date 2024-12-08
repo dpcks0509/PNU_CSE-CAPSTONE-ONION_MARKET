@@ -48,7 +48,7 @@ truffle migrate
      
   #### - 채수철  
    studentNum: 202055652   
-   git: https://github.com/Charles0304
+   git: https://github.com/Charles0304  
    e-mail: cotncjf2@naver.com 
 
 ## 소개 및 시연 영상
